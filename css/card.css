@@ -1,0 +1,59 @@
+@import url(style.css);
+
+
+:root {
+  --keyGreen__I: solid 0 green;
+  --keyRed: solid 10px red;
+  --keyYellow: solid 20px yellow;
+  --keyPurple: solid 30px purple;
+  --keyBlue: solid 40px blue;
+  --keyGreen__II: solid 50px green;
+}
+
+
+.cardBox {
+  text-align: center;
+}
+.cardBox .imageContainer {
+  background-image: url(../images/lorimersloyaltyCard.png);
+  width: 400px;
+  height: 300px;
+  border-radius: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: multiply;
+  animation: card infinite linear 10s alternate;
+}
+.cardBox .text {
+  background: white;
+  color: black;
+  padding-top: 100px;
+}
+a .text:hover {
+  text-shadow: 5px 5px green;
+  color: white;
+  background: black;
+  padding: 0;
+  width: 100%;
+}
+@keyframes card {
+  0% {
+    border: var(--keyGreen__I);
+  }
+  20% {
+    border: var(--keyRed);
+  }
+  40% {
+    border: var(--keyYellow);
+  }
+  60% {
+    border: var(--keyPurple);
+  }
+  80% {
+    border: var(--keyBlue);
+  }
+  100% {
+    border: var(--keyGreen__II);
+  }
+}

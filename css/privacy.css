@@ -1,0 +1,71 @@
+@import url(style.css);
+
+
+main {
+  background: lightblue;
+  animation: none;
+}
+/* javaScript */
+.privacyButton {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0;
+  justify-content: space-around;
+}
+.privacyButton button {
+  font-size: 1.5em;
+}
+/* / javaScript */
+
+
+/* id's */
+#GDPR__InfoContent, #GDPR__NoticeContent, #GDPR__TAndCContent {
+  display: none;
+}
+/* / id's */
+
+
+/* main */
+.details {
+  margin: 0 auto;
+  text-align: center;
+}
+.details .container {
+  font-size: 3em;
+}
+.details .container:hover {
+  color: grey;
+}
+.details .body {
+  font-size: 1.7em;
+  background: white;
+  color: black;
+  padding: 30px 50px;
+  border-radius: 3%;
+  margin: 0 50px;
+  cursor: default;
+}
+.details .container {
+  display: inline;
+  cursor: pointer;
+}
+
+.TAndC__Header .Image {
+  display: inline-block;
+  margin: 50px 50px;
+  border-radius: 20%;
+  max-width: 400px;
+  float: left;
+}
+
+/* media */
+@media only screen and (min-width: 1172px) {
+  .TAndC__Header .Image {
+    clear: both;
+    display: inline;
+  }
+}
+
+
+/* / main */

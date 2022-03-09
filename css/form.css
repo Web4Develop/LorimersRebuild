@@ -1,0 +1,104 @@
+@import url(style.css);
+
+
+.form {
+  text-align: center;
+  font-size: 2em;
+}
+
+.fieldset {
+  margin: 80px 30px;
+  border-radius: 10%;
+  border-style: dashed;
+  border-width: 10px;
+}
+
+.title {
+  display: hidden;
+  font-size: 2em;
+  color: blue;
+  /* font-size: 3em; */
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 983px) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+.name {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.text {
+  margin: 60px 0 30px;
+}
+
+.pickStore, .pickStore__II {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+/* .pickStore > div:hover, .pickStore__II > div:hover {
+  color: blue;
+} */
+@media only screen and (min-width: 600px) {
+  .pickStore, .pickStore__II {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (min-width: 930px) {
+  .pickStore, .pickStore__II {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.storeItem {
+  display: inline;
+  padding: 30px;
+}
+
+.pickStore__II {
+  margin-top: 20px;
+}
+
+.buttonSubmit, .reset {
+  font-size: 1.5em;
+}
+
+.buttonSubmit {
+  margin: 200px 0 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 20%;
+  background: black;
+}
+.buttonSubmit a {
+  color: white;
+}
+
+.reset {
+  /* font-size: 1.5em; */
+  margin: 0 0 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 20%;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+.buttonSubmit:hover, .submit:hover {
+  background: lightgreen;
+  color: black;
+  box-shadow: 0 0 20px;
+}
+
+
+.reset:hover {
+  background: yellow;
+  color: black;
+  box-shadow: 0 0 20px;
+}

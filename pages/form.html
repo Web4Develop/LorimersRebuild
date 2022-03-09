@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Form </title>
+
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+
+  <!-- header -->
+
+  <!-- main -->
+  <article class="form">
+    <form>
+      <fieldset class="fieldset">
+        <legend class="title">
+          Lorimers Loyalty Card
+        </legend>
+
+        <!-- names -->
+        <label for="fName">
+          First Name
+        </label>
+        <input type="text" id="firstName" class="name">
+
+        <br />
+
+        <label for="lName">
+          Last Name
+        </label>
+        <input type="text" id="lastName" class="name">
+
+        <br />
+
+        <!-- text -->
+        <p class="text">
+          Which store would you like to pick up your new card?
+        </p>
+
+        <!-- radio -->
+        <section class="pickStore">
+          <div class="storeItem">
+            <input class="storeItem" type="radio" id="banstead" name="store" value="Banstead">
+            <label>
+              Banstead
+            </label>
+          </div>
+
+          <div class="storeItem">
+            <input class="storeItem" type="radio" id="caterham" name="store" value="Caterham">
+            <label>
+              Caterham
+            </label>
+          </div>
+
+          <div class="storeItem">
+            <input type="radio" id="coulsdon" name="store" value="Coulsdon">
+            <label>
+              Coulsdon
+            </label>
+          </div>
+
+          <div class="storeItem">
+            <input type="radio" id="godalming" name="store" value="Godalming">
+            <label>
+              Godalming
+            </label>
+          </div>
+        </section>
+
+        <br />
+
+        <section class="pickStore__II">
+          <div class="storeItem">
+            <input type="radio" id="oxted" name="store" value="Oxted">
+            <label>
+              Oxted
+            </label>
+          </div>
+
+          <div class="storeItem">
+            <input type="radio" id="purley" name="store" value="Purley">
+            <label>
+              Purley
+            </label>
+          </div>
+
+          <div class="storeItem">
+            <input type="radio" id="sevenoaks" name="store" value="Sevenoaks">
+            <label>
+              Sevenoaks
+            </label>
+          </div>
+
+          <div class="storeItem">
+            <input type="radio" id="westWickham" name="store" value="West Wickham">
+            <label>
+              West Wickham
+            </label>
+          </div>
+        </section>
+
+        <!-- submit -->
+        <!-- <div> -->
+        <button class="buttonSubmit">
+          <a href="formProcess.html#formProcessHead" title="Confirmation">
+            Submit
+            <!-- <input type="submit" value="Submit" class="submit"> -->
+          </a>
+        </button>
+        <!-- </div> -->
+        <br />
+        <input type="reset" value="Reset" class="reset" title="Reset">
+      </fieldset>
+    </form>
+  </article>
+
+  <!-- footer -->
+
+</body>
+
+</html>

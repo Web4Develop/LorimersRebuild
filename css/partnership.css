@@ -1,0 +1,54 @@
+@import url(style.css);
+
+
+main {
+  margin: 100px 0;
+}
+
+.zielerHeader img {
+  display: block;
+  margin: 0 auto 70px;
+  object-fit: contain;
+}
+.zielerHeader {
+  text-align: center;
+  font-size: 2.5em;
+}
+.zielerHeader img, .partnershipWrapper img {
+  border-radius: 30%;
+}
+.quote, zielerHeader :not(a) {
+  text-shadow: 1px 1px black;
+  font-size: 2em;
+  display: block;
+  padding: 100px 0;
+}
+.zieler:hover {
+  color: white;
+  background: lightblue;
+  border-radius: 20%;
+}
+
+.zielerLogo img {
+  display: block;
+  margin: 150px auto 50px;
+  object-fit: contain;
+}
+
+
+.partnershipWrapper {
+  padding: 0 30px;
+}
+.partnershipWrapper img {
+  display: block;
+  margin: 100px auto 50px;
+  outline: double lightblue 15px;
+  outline-offset: -10px;
+}
+.partnershipWrapper .text {
+  color: black;
+  font-size: 2em;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}

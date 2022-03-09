@@ -1,0 +1,72 @@
+@import url(style.css);
+
+
+.cardWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+  max-width: 300px;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 20px;
+}
+.strike {
+  margin: 0 10px 0 0;
+  font-weight: 900;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 15px;
+  color: white;
+  background: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+
+.card button:hover {
+  opacity: .7;
+}
+
+.pagination {
+  display: block;
+  text-align: center;
+  margin: 50px 0 100px;
+}
+
+.pagination a {
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  margin: 0 5px;
+  transition: .5s;
+}
+
+a.active {
+  background: #4CAF50;
+  color: black;
+}
+
+a:hover:not(.active) {
+  background: #ddd;
+}
+
+
+/* media */
+@media only screen and (max-width: 630px) {
+  .remove {
+    display: none;
+  }
+}
+/* / media */

@@ -1,0 +1,102 @@
+@import url(style.css);
+@import url(stationery.css);
+
+
+.header {
+  height: 50vh;
+}
+
+.subHeader {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.spacing {
+  margin: 100px auto;
+}
+
+.middle {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.navGrid {
+  gap: 50px 0;
+  margin: 0 0 30px;
+}
+
+.navGrid, .grid {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.navListMiddle {
+  display: block;
+  text-align: center;
+  margin: 200px 0 50px;
+}
+
+.navList ul {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+.background .bottomTitle {
+  /* border-radius: 40% 40% 0 0; */
+  background-color: teal;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  padding: 50px 0 50px;
+  line-height: 1.3em;
+}
+
+.bottomTitle .arrows {
+  display: none;
+}
+
+.background .grid {
+  gap: 20px 0;
+}
+
+.background .flexbox {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 50px 0;
+  max-width: 400px;
+}
+
+.grid .flexItem__I {
+  background: white;
+}
+
+@media only screen and (min-width: 750px) {
+  .background .grid .flexbox {
+    grid-template-columns: auto auto;
+    gap: 100px 100px;
+    max-width: 900px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .bottomTitle .arrows {
+    display: inline-block;
+    color: lightgreen;
+  }
+  .navGrid {
+    grid-template-columns: auto auto;
+    gap: 50px 30px;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .navGrid, .background .grid {
+    grid-template-columns: auto auto auto auto;
+  }
+  .navGrid {
+    gap: 0 100px;
+  }
+  .background .grid .flexbox {
+    grid-template-columns: auto auto auto auto;
+    max-width: 100%;
+  }
+}
